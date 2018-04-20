@@ -5,3 +5,6 @@ print(list)
 
 list.append(6)
 print(list)
+
+tuple1 = tuple(list)
+print(tuple1)
