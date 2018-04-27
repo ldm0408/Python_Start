@@ -12,7 +12,9 @@ def safe_pop_print(list,index):
         except IndexError:
             print('{} index값을 가져올 수 없어'.format(index))
 safe_pop_print([1,2,3],5)
+# 경우에 따라 if else 문으로 처리 가능 하다
 
+# 아래의 경우 try except 구문으로만 처리 가능하다
 try:
     import my_module1
 except ImportError:
