@@ -3,7 +3,7 @@ for number, name in enumerate(students):
     print('{}번 {}이다'.format(number, name))
 
 
-student_dict = {"{}번".format(number + 1): name for number, name in enumerate(students)}
+student_dict = {"%s번"%(number + 1): name for number, name in enumerate(students)}
 print(student_dict)
 
 scores = ['80','90','78','100','86']
@@ -13,4 +13,3 @@ for x,y in zip(students, scores):
 
 scores_dict = {student : score for student, score in zip(students,scores)}
 print(scores_dict)
-
